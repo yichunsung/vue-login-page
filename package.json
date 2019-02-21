@@ -1,0 +1,50 @@
+{
+  "name": "vue-login-page",
+  "version": "1.0.0",
+  "description": "Using vue to build a login page",
+  "main": "app.js",
+  "babel": {
+    "presets": [
+      "env",
+      "vue"
+    ]
+  },
+  "scripts": {
+    "watch": "webpack --mode development --watch",
+    "build": "webpack --mode development",
+    "deploy": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yichunsung/vue-login-page.git"
+  },
+  "keywords": [
+    "vue",
+    "login",
+    "page"
+  ],
+  "author": "YiChun Sung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yichunsung/vue-login-page/issues"
+  },
+  "homepage": "https://github.com/yichunsung/vue-login-page#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-vue": "^2.0.2",
+    "css-loader": "^1.0.1",
+    "file-loader": "^3.0.1",
+    "vue-loader": "^15.6.4",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.6",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "vue": "^2.6.6",
+    "vue-router": "^3.0.2"
+  }
+}
