@@ -67,7 +67,7 @@
                   <div>Passowrd: </div> 
                   <input type="password" name="password">
                   <button>Log in</button>
-                  <button @click="ChangeToReg()">Sign up</button>
+                  <button @click="ChangeToReg()" class="phoneButton">Sign up</button>
                   <br>
                   
                 </div>
@@ -90,7 +90,7 @@
                   <div>重複 Passowrd: </div>
                   <input type="password" name="password">
                   <button>Sign up</button>
-                  <button @click="ChangeToLogin()">Log in</button>
+                  <button @click="ChangeToLogin()" class="phoneButton">Log in</button>
                 </div>
               </div>
               <!-- 註冊面板 -->
@@ -558,7 +558,9 @@ nav{
     color: #333;
     cursor: pointer;
   }
-
+  .phoneButton{
+    display: none;
+  }
 
 @media(max-width: 500px){
   .UI-frame{
@@ -639,7 +641,9 @@ nav{
     transition: opacity 0.6s;
     
   }
-  
+  .phoneButton{
+    display:inline-block;
+  }
 }
 
 
